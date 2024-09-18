@@ -65,6 +65,6 @@ variables for indirectly deployment.
 
 # Support Us By Joining Our Channels
 
-`Updates Channel` - [Rokubotz](https://t.me/Rokubotz)
+`Updates Channel` - [botsociety](https://t.me/team_society_1)
 
-`Support Group` - [Team Roku](https://t.me/Team_Roku)
+`Support Group` - [Team society](https://t.me/team_society_1)
