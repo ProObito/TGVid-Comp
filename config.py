@@ -17,7 +17,7 @@ class Config(object):
     DB_NAME  = os.environ.get("DB_NAME","Cluster0") 
 
     # Other Configs 
-    ADMIN = int(os.environ.get("ADMIN", "5585016974 1342954836")) # ⚠️ Required
+    ADMIN = int(os.environ.get("ADMIN", "5585016974")) # ⚠️ Required
     LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1002078429106')) # ⚠️ Required
     BOT_UPTIME = BOT_UPTIME  = time.time()
     START_PIC = os.environ.get("START_PIC", "https://envs.sh/qDs.jpg")
