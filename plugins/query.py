@@ -17,23 +17,23 @@ async def Cb_Handle(bot: Client, query: CallbackQuery):
     if data == 'help':
 
         btn = [
-            [InlineKeyboardButton('⟸ Bᴀᴄᴋ', callback_data='home')]
+            [InlineKeyboardButton('Bᴀᴄᴋ', callback_data='home')]
         ]
 
         await query.message.edit(text=Txt.HELP_MSG, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview=True)
 
     if data == 'home':
         btn = [
-            [InlineKeyboardButton(text='❗ Hᴇʟᴘ', callback_data='help'), InlineKeyboardButton(
-                text='🌨️ Aʙᴏᴜᴛ', callback_data='about')],
-            [InlineKeyboardButton(text='📢 Uᴘᴅᴀᴛᴇs', url='https://t.me/AIORFT'), InlineKeyboardButton
-                (text='💻 Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/Snowball_Official')]
+            [InlineKeyboardButton(text='Hᴇʟᴘ', callback_data='help'), InlineKeyboardButton(
+                text='Aʙᴏᴜᴛ', callback_data='about')],
+            [InlineKeyboardButton(text='Uᴘᴅᴀᴛᴇs', url='https://t.me/team_society_1'), InlineKeyboardButton
+                (text='Dᴇᴠᴇʟᴏᴘᴇʀ', url='https://t.me/i_killed_my_clan')]
         ]
         await query.message.edit(text=Txt.PRIVATE_START_MSG.format(query.from_user.mention), reply_markup=InlineKeyboardMarkup(btn))
 
     elif data == 'about':
         BUTN = [
-            [InlineKeyboardButton(text='⟸ Bᴀᴄᴋ', callback_data='home')]
+            [InlineKeyboardButton(text='Bᴀᴄᴋ', callback_data='home')]
         ]
         botuser = await bot.get_me()
         await query.message.edit(Txt.ABOUT_TXT.format(botuser.username), reply_markup=InlineKeyboardMarkup(BUTN), disable_web_page_preview=True)
